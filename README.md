@@ -73,3 +73,7 @@ private Api GetApi(Type type)
 
 ```
 
+### License
+
+This software is open source, licensed under the MIT License (MIT). See  <a href="https://github.com/brunobrandes/fullcontact-api-csharp/blob/master/LICENSE.md" rel="License">LICENSE.me</a> for details.
+
