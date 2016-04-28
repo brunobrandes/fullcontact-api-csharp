@@ -26,6 +26,8 @@ namespace FullContact.Domain.Enum
         Google = 15,
         Instagram = 16,
         AngelList = 17,
-        Xing = 18
+        Xing = 18,
+
+        Other = 50
     }
 }
