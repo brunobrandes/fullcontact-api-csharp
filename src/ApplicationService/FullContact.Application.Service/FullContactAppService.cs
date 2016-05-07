@@ -29,7 +29,7 @@ namespace FullContact.Application.Service
         }
 
         #endregion
-        
+
         #region Private methods
 
         private Api GetApi(Type type)
@@ -44,9 +44,9 @@ namespace FullContact.Application.Service
             }
         }
 
-        private string GetFullUrl(string url, string apiKey, Api api, Serializer serializer, Lookup lookup, string parameter, Style style)
+        private string GetFullUrl(string url, Api api, Serializer serializer, Lookup lookup, string parameter, Style style)
         {
-            return $"{url}/{api.ToString().ToLower()}.{serializer.ToString().ToLower()}?{lookup.ToString().ToLower()}={parameter}&apiKey={apiKey}&style={style.ToString().ToLower()}";
+            return $"{url}/{api.ToString().ToLower()}.{serializer.ToString().ToLower()}?{lookup.ToString().ToLower()}={parameter}&style={style.ToString().ToLower()}";
         }
 
         #endregion
@@ -70,10 +70,12 @@ namespace FullContact.Application.Service
         {
             var api = GetApi(typeof(T));
 
-            var url = GetFullUrl(_url, _apiKey, Api.Person, _serializer.Serializer, lookup, parameter, Style.List);
+            var url = GetFullUrl(_url, Api.Person, _serializer.Serializer, lookup, parameter, Style.List);
 
             using (var httpClient = _httpClientFactory.Create())
             {
+                httpClient.DefaultRequestHeaders.Add("X-fullcontact-apiKey", _apiKey);
+
                 var httpMessageResponse = await httpClient.GetAsync(new Uri(url));
 
                 if (httpMessageResponse != null)
@@ -87,7 +89,8 @@ namespace FullContact.Application.Service
 
                     if (!httpMessageResponse.IsSuccessStatusCode)
                     {
-                        throw new HttpRequestException(!string.IsNullOrEmpty(content) ? $"Status: {httpMessageResponse.StatusCode} Response: {content}" : "Unexpected error call full contact api.");
+                        throw new HttpRequestException(!string.IsNullOrEmpty(content) ? $"Status: {httpMessageResponse.StatusCode} Response: {content}" :
+                            "Unexpected error call full contact api.");
                     }
 
                     if (string.IsNullOrEmpty(content))
