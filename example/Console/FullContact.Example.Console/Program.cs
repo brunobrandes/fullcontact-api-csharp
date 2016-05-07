@@ -30,7 +30,7 @@ namespace FullContact.Example.Console
 
                 ///Get container full contact app service factory  
                 var fullContactAppServiceFactory = container.GetInstance<IFullContactAppServiceFactory>();
-
+                
                 ///Create full contact app service  
                 var fullContactAppService = fullContactAppServiceFactory.Create<Person>("https://api.fullcontact.com/v2", "xxxx", Serializer.Json);
 
