@@ -34,31 +34,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FullContact.Application.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.4\lib\net461\FullContact.Application.Service.dll</HintPath>
+      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.5\lib\net461\FullContact.Application.Service.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FullContact.Domain.DataTransferObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.4\lib\net461\FullContact.Domain.DataTransferObject.dll</HintPath>
+      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.5\lib\net461\FullContact.Domain.DataTransferObject.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FullContact.Domain.Enum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.4\lib\net461\FullContact.Domain.Enum.dll</HintPath>
+      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.5\lib\net461\FullContact.Domain.Enum.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FullContact.Domin.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.4\lib\net461\FullContact.Domin.Service.dll</HintPath>
+      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.5\lib\net461\FullContact.Domin.Service.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FullContact.Infrastructure, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.4\lib\net461\FullContact.Infrastructure.dll</HintPath>
+      <HintPath>..\..\packages\FullContact.Api.Csharp.1.0.0.5\lib\net461\FullContact.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SimpleInjector, Version=3.1.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SimpleInjector.3.1.2\lib\net45\SimpleInjector.dll</HintPath>
+    <Reference Include="SimpleInjector, Version=3.1.4.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SimpleInjector.3.1.4\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
