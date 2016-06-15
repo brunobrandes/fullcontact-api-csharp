@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>FullContact.Api.Csharp</id>
+        <version>1.0.0.6</version>
+        <title>FullContact.Api.Csharp</title>
+        <authors>Bruno Brandes</authors>
+        <owners>Bruno Brandes</owners>
+        <licenseUrl>https://github.com/brunobrandes/fullcontact-api-csharp</licenseUrl>
+        <projectUrl>https://github.com/brunobrandes/fullcontact-api-csharp</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A C# wrapper for the FullContact API</description>
+        <releaseNotes>This release contains the person api implemented - Api key set in http header.</releaseNotes>
+        <language>pt-BR</language>
+        <dependencies>
+            <group targetFramework=".NETFramework4.6.1">
+                <dependency id="Newtonsoft.Json" version="8.0.3" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Application.Service.dll" target="lib\net461\FullContact.Application.Service.dll" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Application.Service.pdb" target="lib\net461\FullContact.Application.Service.pdb" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Domain.DataTransferObject.dll" target="lib\net461\FullContact.Domain.DataTransferObject.dll" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Domain.DataTransferObject.pdb" target="lib\net461\FullContact.Domain.DataTransferObject.pdb" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Domain.Enum.dll" target="lib\net461\FullContact.Domain.Enum.dll" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Domain.Enum.pdb" target="lib\net461\FullContact.Domain.Enum.pdb" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Domin.Service.dll" target="lib\net461\FullContact.Domin.Service.dll" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Domin.Service.pdb" target="lib\net461\FullContact.Domin.Service.pdb" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Infrastructure.dll" target="lib\net461\FullContact.Infrastructure.dll" />
+        <file src="ApplicationService\FullContact.Application.Service\bin\Release\FullContact.Infrastructure.pdb" target="lib\net461\FullContact.Infrastructure.pdb" />
+    </files>
+</package>

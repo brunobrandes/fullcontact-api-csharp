@@ -18,7 +18,7 @@ var container = new Container();
 #region Dependency Injection (DI) using Simple Injector
 
 container.RegisterSingleton<IServiceProvider>(container);
-ontainer.Register<IFullContactAppServiceFactory, FullContactAppServiceFactory>();
+container.Register<IFullContactAppServiceFactory, FullContactAppServiceFactory>();
 container.Register<IHttpClientFactory, HttpClientFactory>();
 
 #endregion
