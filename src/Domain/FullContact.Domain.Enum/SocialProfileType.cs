@@ -109,7 +109,7 @@ namespace FullContact.Domain.Enum
         StackExchange = 95,
         Steam = 96,
         Tagged = 97,
-        TypePad = 98
-
+        TypePad = 98,
+        Keybase = 99
     }
 }
