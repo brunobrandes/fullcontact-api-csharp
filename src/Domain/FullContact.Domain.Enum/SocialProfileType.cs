@@ -110,6 +110,7 @@ namespace FullContact.Domain.Enum
         Steam = 96,
         Tagged = 97,
         TypePad = 98,
-        Keybase = 99
+        Keybase = 99,
+        Avatar  = 100
     }
 }
